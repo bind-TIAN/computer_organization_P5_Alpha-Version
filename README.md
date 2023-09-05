@@ -35,6 +35,14 @@ always #5 clk=~clk;
 ```
 ## Construction of basic units
 ---
+Design of the `comparator`:
+```Verilog
+input [31:0] a,
+input [31:0] b,
+output c
+assign c = (a!=b)?1:0;
+```
+
 
 # Build the feeling of the CPU
 ---
