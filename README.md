@@ -90,3 +90,4 @@ assign W_ext_output = {{24{W_ext_input[7]}},W_ext_input};
 ```
 # Build the feeling of the CPU
 ---
+A nice mental journey!
