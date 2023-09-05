@@ -7,7 +7,10 @@ This is a project on CPU microprocessor design, using verilog in the language of
 ## Introduction to the file
 ---
 A serious of files named `bijiao_` and `bijiaoqi_` contains detailed design information for several directives. The list of these instruction sets is as follows:
-
+|left|center|right|
+|:---|:---:|---:|
+|aaaaa|bbbbb|ccccc|
+|aa|bb|cc|
 
 ## References for architectures
 ---
