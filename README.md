@@ -2,7 +2,7 @@
 ---
 # Write on the front
 ---
-This is a project on CPU microprocessor design, using verilog in the language of `verilog`, based on the testing and verification of several `simulation platforms`.
+This is a project on CPU microprocessor design, using verilog in the language of `verilog`, based on the testing and verification of several `simulation platforms`. These simulation platforms include `Logisim` and so on.
 
 ## Introduction to the file
 ---
