@@ -22,7 +22,12 @@ The architecture is built in the book `Digital Design and Computer Architecture 
 
 ## Design of core modules
 ---
-
+```Verilog
+mips uut (
+		.clk(clk), 
+		.reset(reset)
+	);
+```
 ## Construction of basic units
 ---
 
