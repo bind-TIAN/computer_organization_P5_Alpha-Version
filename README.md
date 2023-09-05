@@ -2,15 +2,20 @@
 ---
 # Write on the front
 ---
-This is a project on CPU microprocessor design, using verilog in the language of `verilog`, based on the testing and verification of several `simulation platforms`. These simulation platforms include `Logisim` and so on.
+This is a project on CPU microprocessor design, using verilog in the language of `verilog`, based on the testing and verification of several `simulation platforms`. These simulation platforms include `Logisim`, `ISE` and so on.
 
 ## Introduction to the file
 ---
-A serious of files named `bijiao_` and `bijiaoqi_` contains detailed design information for several directives. The list of these instruction sets is as follows:
+*    A serious of files named `bijiao_` and `bijiaoqi_` contains detailed design information for several directives. The list of these instruction sets is as follows:
 | bgtz | blez | bltz | bne | movz |
 | :--- | :---: | :---: | :---: | ---: |
 | aaaaa | bbbbb | ccccc | ddddd | eeeee |
 | aa | bb | cc | dd | ee |
+
+*    The two files `fen_wei_qi` and `fen_wei_qi` implement two different types of quantiles, respectively.
+*    Files named starting with `mux_` contain several different kinds of `multiplexer` designs. For example, a file named `M_mux_sb` provides a design for one of the multiplexers.
+*    The file that begins with `yumen` provides a design for the `AND gate` in a digital circuit.
+*    In addition, in the digital circuit design process, `W_sign_extence` includes the design of the `immediate number expansion` unit, and `W_mux` is the design of the `clock trigger` unit.
 
 ## References for architectures
 ---
