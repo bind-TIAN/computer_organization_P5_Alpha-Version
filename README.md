@@ -55,7 +55,15 @@ assign data_two = data_dm_M_level[15:8];
 assign data_three = data_dm_M_level[23:16];
 assign data_four = data_dm_M_level[31:24];
 ```
+Design of the `multi-selector`:
+```Verilog
+input [4:0] a,
+input [4:0] b,
+input sel,
+output [4:0] c
 
+assign c = (sel)? a:b;
+```
 
 # Build the feeling of the CPU
 ---
