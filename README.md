@@ -9,8 +9,7 @@ This is a project on CPU microprocessor design, using verilog in the language of
 A serious of files named `bijiao_` and `bijiaoqi_` contains detailed design information for several directives. The list of these instruction sets is as follows:
 | bgtz | blez | bltz | bne | movz |
 | :--- | :---: | :---: | :---: | ---: |
-| aaaaa | bbbbb | ccccc | ddddd | eeeee |
-| aa | bb | cc | dd | ee |
+| > | <= | < | != | transfer |
 
 *    The two files `fen_wei_qi` and `fen_wei_qi` implement two different types of quantiles, respectively.
 *    Files named starting with `mux_` contain several different kinds of `multiplexer` designs. For example, a file named `M_mux_sb` provides a design for one of the multiplexers.
