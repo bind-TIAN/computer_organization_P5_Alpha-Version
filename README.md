@@ -18,6 +18,7 @@ A serious of files named `bijiao_` and `bijiaoqi_` contains detailed design info
 
 ## References for architectures
 ---
+The architecture is built in the book `Digital Design and Computer Architecture (Second Edition)`, and the design of the `CPU architecture` is referred to `page 268` of the book.
 
 ## Design of core modules
 ---
