@@ -28,6 +28,11 @@ mips uut (
 		.reset(reset)
 	);
 ```
+
+The following code represents delay by `5 clock cycles` and then flip the signal.
+``` Verilog
+always #5 clk=~clk;
+```
 ## Construction of basic units
 ---
 
