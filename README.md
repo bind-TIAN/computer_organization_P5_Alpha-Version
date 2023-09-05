@@ -35,6 +35,7 @@ always #5 clk=~clk;
 ```
 ## Construction of basic units
 ---
+
 Design of the `comparator`:
 ```Verilog
 input [31:0] a,
@@ -42,6 +43,7 @@ input [31:0] b,
 output c
 assign c = (a!=b)?1:0;
 ```
+
 Design of the "quantile":
 ```Verilog
 input [31:0] data_dm_M_level,
@@ -55,6 +57,7 @@ assign data_two = data_dm_M_level[15:8];
 assign data_three = data_dm_M_level[23:16];
 assign data_four = data_dm_M_level[31:24];
 ```
+
 Design of the `multi-selector`:
 ```Verilog
 input [4:0] a,
@@ -63,6 +66,19 @@ input sel,
 output [4:0] c
 
 assign c = (sel)? a:b;
+```
+
+About the design of the "multiplexer" of the `sb directive`.
+```Verilog
+input [31:0] data_sb_input_alu,
+input [31:0] data_sb_input_rt,
+input [1:0] data_sb_mux_two_adder,
+output [31:0] data_sb_output
+
+assign data_sb_output = (data_sb_mux_two_adder == 2'b00)? {data_sb_input_alu[31:8],data_sb_input_rt[7:0]}:
+(data_sb_mux_two_adder == 2'b01)? {data_sb_input_alu[31:16],data_sb_input_rt[7:0],data_sb_input_alu[7:0]}:
+(data_sb_mux_two_adder == 2'b10)? {data_sb_input_alu[31:24],data_sb_input_rt[7:0],data_sb_input_alu[15:0]}:
+{data_sb_input_rt[7:0],data_sb_input_alu[23:0]};
 ```
 
 # Build the feeling of the CPU
