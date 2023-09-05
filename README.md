@@ -81,5 +81,12 @@ assign data_sb_output = (data_sb_mux_two_adder == 2'b00)? {data_sb_input_alu[31:
 {data_sb_input_rt[7:0],data_sb_input_alu[23:0]};
 ```
 
+Design of the `Immediate Number Expansion Unit`:
+```Verilog
+input [7:0] W_ext_input,
+output [31:0] W_ext_output
+
+assign W_ext_output = {{24{W_ext_input[7]}},W_ext_input};
+```
 # Build the feeling of the CPU
 ---
